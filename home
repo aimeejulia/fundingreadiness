@@ -1,0 +1,1489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Ready Is Your Project for Funding? - Permaculture Projects</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-2px); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15); }
+        .professional-accent { background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); }
+        .section-divider { border-top: 1px solid #e5e7eb; margin: 2rem 0; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="gradient-bg text-white py-20">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <div class="mb-8">
+                <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span class="text-2xl">💰</span>
+                </div>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 tracking-tight">How Ready Is Your Project for Funding?</h1>
+            <p class="text-xl md:text-2xl mb-8 opacity-90 font-light">Strategic Guidance for Permaculture and Permaculture-Aligned Projects</p>
+
+        </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <div class="max-w-6xl mx-auto px-6 -mt-10 relative z-10">
+        <div class="bg-white rounded-xl shadow-xl p-3 flex flex-wrap gap-2 justify-center border border-gray-200">
+            <button onclick="showSection('readiness')" id="tab-readiness" class="tab-btn px-6 py-4 rounded-lg font-semibold transition-all bg-blue-600 text-white shadow-md">
+                📋 Funding Readiness
+            </button>
+            <button onclick="showSection('opportunities')" id="tab-opportunities" class="tab-btn px-6 py-4 rounded-lg font-semibold transition-all text-gray-700 hover:bg-gray-50 hover:text-blue-600">
+                💰 Finding Opportunities
+            </button>
+            <button onclick="showSection('alternative-funding')" id="tab-alternative-funding" class="tab-btn px-6 py-4 rounded-lg font-semibold transition-all text-gray-700 hover:bg-gray-50 hover:text-blue-600">
+                🌟 Alternative Funding
+            </button>
+            <button onclick="showSection('funder-relations')" id="tab-funder-relations" class="tab-btn px-6 py-4 rounded-lg font-semibold transition-all text-gray-700 hover:bg-gray-50 hover:text-blue-600">
+                🤝 Funder Relations
+            </button>
+            <button onclick="showSection('checklist')" id="tab-checklist" class="tab-btn px-6 py-4 rounded-lg font-semibold transition-all text-gray-700 hover:bg-gray-50 hover:text-blue-600">
+                ✅ Action Checklist
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        
+        <!-- Funding Readiness Section -->
+        <div id="section-readiness" class="section-content">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6 tracking-tight">Funding Readiness Assessment</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">Most permaculture projects fail to secure funding because they skip these foundational elements. Assess your current position and build a strategic path forward.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <!-- Best Practices -->
+                <div class="bg-white rounded-xl shadow-lg p-8 card-hover border-l-4 border-blue-600">
+                    <h3 class="text-2xl font-bold text-blue-700 mb-6 flex items-center">
+                        ✅ Best Practices
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Clear Mission & Impact</h4>
+                                <p class="text-gray-600 text-sm">Funders need to understand exactly what you do and what changes you create</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Financial Transparency</h4>
+                                <p class="text-gray-600 text-sm">Keep clean books. Funders will check your financial management before giving you money</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Community Engagement</h4>
+                                <p class="text-gray-600 text-sm">Prove people actually want what you're doing. Get letters of support</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Realistic Timeline</h4>
+                                <p class="text-gray-600 text-sm">Don't promise what you can't deliver. Things always take longer than expected</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Sustainability Plan</h4>
+                                <p class="text-gray-600 text-sm">Funders won't support you forever. Show how you'll survive without them</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- What to Avoid -->
+                <div class="bg-white rounded-xl shadow-lg p-8 card-hover border-l-4 border-red-500">
+                    <h3 class="text-2xl font-bold text-red-600 mb-6 flex items-center">
+                        ⚠️ Common Pitfalls
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Vague Project Descriptions</h4>
+                                <p class="text-gray-600 text-sm">Saying you'll "transform communities" means nothing. Be specific about what you actually do</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Unrealistic Budgets</h4>
+                                <p class="text-gray-600 text-sm">Your budget screams amateur if it's too low. Volunteers aren't free labor</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Lack of Legal Structure</h4>
+                                <p class="text-gray-600 text-sm">Most funders won't give money to individuals. Get nonprofit status or find a fiscal sponsor</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">No Track Record</h4>
+                                <p class="text-gray-600 text-sm">Nobody funds untested ideas. Run small projects first, document results</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Poor Communication</h4>
+                                <p class="text-gray-600 text-sm">Write clearly, respond quickly, spell check everything. Basic professionalism matters</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Problematic Behaviors Section -->
+            <div class="bg-red-50 border-2 border-red-200 rounded-xl p-8 mb-8">
+                <h3 class="text-2xl font-bold text-red-700 mb-6 flex items-center">
+                    🚨 Behaviors That Kill Your Funding Chances
+                </h3>
+                <p class="text-red-800 mb-6">Do these things and funders will blacklist you. The permaculture funding world is small and people talk:</p>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <div class="bg-white rounded-lg p-4 border-l-4 border-red-500">
+                            <h4 class="font-bold text-red-700 mb-2">❌ Inappropriate Fundraising</h4>
+                            <ul class="text-sm text-red-800 space-y-1">
+                                <li>• Posting "please fund my project" in Facebook groups</li>
+                                <li>• Spamming LinkedIn connections with funding requests</li>
+                                <li>• Cold emailing foundation staff asking for money</li>
+                                <li>• Using sob stories instead of showing real impact</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg p-4 border-l-4 border-red-500">
+                            <h4 class="font-bold text-red-700 mb-2">❌ Harassment & Pressure Tactics</h4>
+                            <ul class="text-sm text-red-800 space-y-1">
+                                <li>• Calling program officers after they said no</li>
+                                <li>• Sending follow-up emails every few days</li>
+                                <li>• Going around staff to contact the CEO directly</li>
+                                <li>• Arguing about why they should fund you anyway</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="bg-white rounded-lg p-4 border-l-4 border-red-500">
+                            <h4 class="font-bold text-red-700 mb-2">❌ Inconsistent Project Focus</h4>
+                            <ul class="text-sm text-red-800 space-y-1">
+                                <li>• Changing your project focus every six months</li>
+                                <li>• Applying for tech grants when you do farming</li>
+                                <li>• Telling each funder what you think they want to hear</li>
+                                <li>• Having no clear answer to "what do you actually do?"</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg p-4 border-l-4 border-red-500">
+                            <h4 class="font-bold text-red-700 mb-2">❌ Scope & Eligibility Violations</h4>
+                            <ul class="text-sm text-red-800 space-y-1">
+                                <li>• Applying for grants clearly outside funding priorities</li>
+                                <li>• Ignoring geographic or organizational restrictions</li>
+                                <li>• Submitting proposals that don't match your capacity</li>
+                                <li>• Misrepresenting your organization's status or experience</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Professional Alternative Approaches Section -->
+            <div class="bg-emerald-50 border-2 border-emerald-200 rounded-xl p-8 mb-12">
+                <h3 class="text-2xl font-bold text-emerald-700 mb-6 flex items-center">
+                    ✅ Professional Alternative Approaches
+                </h3>
+                <p class="text-emerald-800 mb-6">Build credibility and lasting relationships with these proven professional strategies:</p>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <div class="bg-white rounded-lg p-4 border-l-4 border-emerald-500">
+                            <h4 class="font-bold text-emerald-700 mb-2">✅ Relationship-Based Fundraising</h4>
+                            <ul class="text-sm text-emerald-800 space-y-1">
+                                <li>• Share educational content about permaculture practices</li>
+                                <li>• Offer free workshops or consultations to build trust</li>
+                                <li>• Join permaculture networks and contribute meaningfully</li>
+                                <li>• Document and share your project's impact stories</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg p-4 border-l-4 border-emerald-500">
+                            <h4 class="font-bold text-emerald-700 mb-2">✅ Professional Communication</h4>
+                            <ul class="text-sm text-emerald-800 space-y-1">
+                                <li>• Send quarterly updates to interested supporters</li>
+                                <li>• Thank funders publicly and specifically for their support</li>
+                                <li>• Ask for feedback and implement suggestions</li>
+                                <li>• Maintain a professional email signature and website</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="bg-white rounded-lg p-4 border-l-4 border-emerald-500">
+                            <h4 class="font-bold text-emerald-700 mb-2">✅ Consistent Project Development</h4>
+                            <ul class="text-sm text-emerald-800 space-y-1">
+                                <li>• Create a 3-year strategic plan and stick to it</li>
+                                <li>• Start with pilot projects to demonstrate competence</li>
+                                <li>• Build partnerships with established organizations</li>
+                                <li>• Develop expertise in 2-3 core permaculture areas</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg p-4 border-l-4 border-emerald-500">
+                            <h4 class="font-bold text-emerald-700 mb-2">✅ Strategic Grant Applications</h4>
+                            <ul class="text-sm text-emerald-800 space-y-1">
+                                <li>• Research 5 funders thoroughly before applying to 1</li>
+                                <li>• Attend funder webinars and information sessions</li>
+                                <li>• Connect with past grantees for insights and advice</li>
+                                <li>• Submit only when you meet 80%+ of requirements</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg p-6 mt-6 border border-emerald-200">
+                    <h4 class="font-bold text-emerald-700 mb-4">🎯 Action Steps You Can Take This Week</h4>
+                    <div class="grid md:grid-cols-3 gap-6 text-sm">
+                        <div>
+                            <p class="font-medium text-gray-800 mb-2">Build Your Reputation:</p>
+                            <ul class="text-gray-700 space-y-1">
+                                <li>• Write one educational blog post about your work</li>
+                                <li>• Join 2 relevant professional groups online</li>
+                                <li>• Offer to speak at a local sustainability event</li>
+                                <li>• Create a simple project photo documentation system</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="font-medium text-gray-800 mb-2">Strengthen Communication:</p>
+                            <ul class="text-gray-700 space-y-1">
+                                <li>• Set up a monthly newsletter template</li>
+                                <li>• Create standard thank you letter templates</li>
+                                <li>• Update your website with recent project photos</li>
+                                <li>• Practice your 2-minute project elevator pitch</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="font-medium text-gray-800 mb-2">Research & Plan:</p>
+                            <ul class="text-gray-700 space-y-1">
+                                <li>• Identify 3 funders whose missions align with yours</li>
+                                <li>• Sign up for their newsletters and follow them</li>
+                                <li>• Create a simple project budget spreadsheet</li>
+                                <li>• Schedule monthly planning meetings with your team</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Readiness Assessment -->
+            <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">📊 Quick Readiness Assessment</h3>
+                <p class="text-center text-gray-600 mb-8">Honestly assess where your project stands today. Most successful projects spend 6-18 months building readiness before major funding applications.</p>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg p-6 shadow-md border-l-4 border-red-500">
+                        <div class="text-center mb-4">
+                            <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <span class="text-2xl">🚫</span>
+                            </div>
+                            <h4 class="font-bold text-red-600 text-lg">Not Ready</h4>
+                        </div>
+                        <div class="text-sm text-gray-700 space-y-3">
+                            <p class="font-medium text-red-700">You may be here if you:</p>
+                            <ul class="space-y-2">
+                                <li>• Have a great idea but no written plan</li>
+                                <li>• Lack legal structure or fiscal sponsor</li>
+                                <li>• Haven't started any pilot activities</li>
+                                <li>• No documented community interest</li>
+                                <li>• Unclear about actual costs and timeline</li>
+                                <li>• No experience with project management</li>
+                            </ul>
+                            <div class="bg-red-50 p-3 rounded mt-4">
+                                <p class="font-medium text-red-800 text-xs">Next Steps:</p>
+                                <p class="text-red-700 text-xs">Focus on Phase 1 activities. Start small pilot projects and document everything. Build community support before seeking major funding.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg p-6 shadow-md border-l-4 border-yellow-500">
+                        <div class="text-center mb-4">
+                            <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <span class="text-2xl">⚡</span>
+                            </div>
+                            <h4 class="font-bold text-yellow-600 text-lg">Getting There</h4>
+                        </div>
+                        <div class="text-sm text-gray-700 space-y-3">
+                            <p class="font-medium text-yellow-700">You may be here if you:</p>
+                            <ul class="space-y-2">
+                                <li>• Have basic legal structure in place</li>
+                                <li>• Completed some small projects successfully</li>
+                                <li>• Have community support but limited documentation</li>
+                                <li>• Rough budget estimates but need refinement</li>
+                                <li>• Some partnerships but need to strengthen them</li>
+                                <li>• Basic website/materials but need improvement</li>
+                            </ul>
+                            <div class="bg-yellow-50 p-3 rounded mt-4">
+                                <p class="font-medium text-yellow-800 text-xs">Next Steps:</p>
+                                <p class="text-yellow-700 text-xs">Strengthen your weakest areas. Focus on documentation, detailed budgets, and building a track record. Consider smaller grants first.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg p-6 shadow-md border-l-4 border-green-500">
+                        <div class="text-center mb-4">
+                            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <span class="text-2xl">🎯</span>
+                            </div>
+                            <h4 class="font-bold text-green-600 text-lg">Ready to Apply</h4>
+                        </div>
+                        <div class="text-sm text-gray-700 space-y-3">
+                            <p class="font-medium text-green-700">You may be here if you:</p>
+                            <ul class="space-y-2">
+                                <li>• Established legal entity with good governance</li>
+                                <li>• 2+ years of successful project implementation</li>
+                                <li>• Strong community partnerships and support</li>
+                                <li>• Detailed, realistic budgets and timelines</li>
+                                <li>• Professional materials and documentation</li>
+                                <li>• Clear impact measurement and reporting</li>
+                            </ul>
+                            <div class="bg-green-50 p-3 rounded mt-4">
+                                <p class="font-medium text-green-800 text-xs">Next Steps:</p>
+                                <p class="text-green-700 text-xs">Research funders strategically. Apply to 3-5 well-matched opportunities. Focus on relationship building and professional communication.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-8 bg-white rounded-lg p-6 shadow-md">
+                    <h4 class="font-bold text-gray-800 mb-3">💡 Remember: Readiness is a Journey</h4>
+                    <p class="text-gray-600 text-sm max-w-2xl mx-auto">
+                        Most successful permaculture projects take 12-24 months to become truly funding-ready. Don't rush the process - 
+                        each phase builds crucial credibility and capacity. Funders can tell the difference between a well-prepared 
+                        organization and one that's trying to skip steps.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Finding Opportunities Section -->
+        <div id="section-opportunities" class="section-content hidden">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Finding the Right Funding</h2>
+                <p class="text-lg text-gray-600">Most people waste months applying to the wrong funders. Here's how to find the right ones</p>
+            </div>
+
+
+
+            <!-- Database Emphasis Section -->
+            <div class="professional-accent rounded-xl p-10 text-white mb-8 shadow-xl">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-3xl">🎯</span>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-6">Strategic Funding Database Access</h3>
+                    <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">Stop wasting time on random searches. Use our curated database to identify funders who actively support permaculture initiatives.</p>
+                    <a href="https://www.perma.earth/funding-opportunities/" target="_blank" class="inline-block bg-white text-blue-700 font-bold py-4 px-8 rounded-lg hover:bg-gray-50 transition-all shadow-lg text-lg">
+                        🚀 Access Strategic Database
+                    </a>
+                </div>
+            </div>
+
+            <!-- Smart Filtering Strategy -->
+            <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6">🔍 Smart Filtering Strategy</h3>
+                <p class="text-gray-600 mb-6 text-center">Three filters that will save you from applying to funders who will never fund you:</p>
+                
+                <div class="grid md:grid-cols-3 gap-8 mb-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl">🏭</span>
+                        </div>
+                        <h4 class="font-bold text-gray-800 mb-3">Sector Filter</h4>
+                        <div class="text-sm text-gray-600 space-y-2">
+                            <div class="bg-blue-50 p-3 rounded-lg">
+                                <p class="font-medium text-blue-800 mb-2">Select your focus areas:</p>
+                                <ul class="text-left space-y-1">
+                                    <li>• Sustainable Agriculture</li>
+                                    <li>• Environmental Conservation</li>
+                                    <li>• Community Development</li>
+                                    <li>• Education & Training</li>
+                                    <li>• Climate Change Mitigation</li>
+                                    <li>• Food Security</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl">🌍</span>
+                        </div>
+                        <h4 class="font-bold text-gray-800 mb-3">Geographical Filter</h4>
+                        <div class="text-sm text-gray-600 space-y-2">
+                            <div class="bg-green-50 p-3 rounded-lg">
+                                <p class="font-medium text-green-800 mb-2">Match your location:</p>
+                                <ul class="text-left space-y-1">
+                                    <li>• Continent</li>
+                                    <li>• Bioregion</li>
+                                    <li>• Country</li>
+                                    <li>• World</li>
+                                    <li>• Local/Municipal</li>
+                                    <li>• State/Provincial</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl">🏢</span>
+                        </div>
+                        <h4 class="font-bold text-gray-800 mb-3">Applicant Type Filter</h4>
+                        <div class="text-sm text-gray-600 space-y-2">
+                            <div class="bg-purple-50 p-3 rounded-lg">
+                                <p class="font-medium text-purple-800 mb-2">Match your status:</p>
+                                <ul class="text-left space-y-1">
+                                    <li>• 501(c)(3) Nonprofits</li>
+                                    <li>• Fiscally Sponsored Projects</li>
+                                    <li>• Community Groups</li>
+                                    <li>• Educational Institutions</li>
+                                    <li>• Individual Practitioners</li>
+                                    <li>• Cooperatives</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-lg p-6">
+                    <h4 class="font-bold text-gray-800 mb-3 text-center">💡 Pro Tip: Layer Your Filters</h4>
+                    <div class="grid md:grid-cols-2 gap-6 text-sm">
+                        <div>
+                            <p class="font-medium text-gray-800 mb-2">Example Search Strategy:</p>
+                            <ol class="text-gray-700 space-y-1">
+                                <li>1. Start with <strong>Sector:</strong> "Community Welfare"</li>
+                                <li>2. Add <strong>Geography:</strong> "Africa"</li>
+                                <li>3. Filter by <strong>Applicant Type:</strong> "Fiscally Sponsored"</li>
+                                <li>4. Result: 15 highly relevant opportunities instead of 1,500!</li>
+                            </ol>
+                        </div>
+                        <div>
+                            <p class="font-medium text-gray-800 mb-2">Additional Filters Available:</p>
+                            <ul class="text-gray-700 space-y-1">
+                                <li>• Funding amount ranges</li>
+                                <li>• Application deadlines</li>
+                                <li>• Rolling status (ongoing vs. deadline-based)</li>
+                                <li>• Funder type (foundation, government, corporate)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How to Use Section -->
+            <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">🎯 How to Make the Most of the Database</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-bold text-gray-800 mb-4 flex items-center">
+                            <span class="bg-emerald-100 rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3">1</span>
+                            Start with Your Profile
+                        </h4>
+                        <ul class="text-gray-600 space-y-2 ml-11">
+                            <li>• Define your project focus areas clearly</li>
+                            <li>• Set your geographic scope and preferences</li>
+                            <li>• Specify your funding amount ranges</li>
+                            <li>• Identify your organizational status</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-800 mb-4 flex items-center">
+                            <span class="bg-emerald-100 rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3">2</span>
+                            Use Advanced Filters
+                        </h4>
+                        <ul class="text-gray-600 space-y-2 ml-11">
+                            <li>• Filter by application deadlines</li>
+                            <li>• Match eligibility requirements</li>
+                            <li>• Sort by funding amounts</li>
+                            <li>• Focus on your expertise areas</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-800 mb-4 flex items-center">
+                            <span class="bg-emerald-100 rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3">3</span>
+                            Research Thoroughly
+                        </h4>
+                        <ul class="text-gray-600 space-y-2 ml-11">
+                            <li>• Read full opportunity descriptions</li>
+                            <li>• Check funder websites for updates</li>
+                            <li>• Review past grantee information</li>
+                            <li>• Note application requirements</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-800 mb-4 flex items-center">
+                            <span class="bg-emerald-100 rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3">4</span>
+                            Track & Apply Strategically
+                        </h4>
+                        <ul class="text-gray-600 space-y-2 ml-11">
+                            <li>• Save promising opportunities</li>
+                            <li>• Set deadline reminders</li>
+                            <li>• Apply to 3-5 well-matched funders</li>
+                            <li>• Share feedback with the community</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Research Strategy -->
+            <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6">📋 After Filtering: Deep Research</h3>
+                <p class="text-gray-600 mb-6">Found 10-15 potential funders? Now do the real work. Most people skip this step and wonder why they get rejected:</p>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-bold text-gray-800 mb-4">Essential Research Steps</h4>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center space-x-2">
+                                <span class="w-2 h-2 bg-emerald-500 rounded-full"></span>
+                                <span>Visit each funder's website directly</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <span class="w-2 h-2 bg-emerald-500 rounded-full"></span>
+                                <span>Review their recent grant awards</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <span class="w-2 h-2 bg-emerald-500 rounded-full"></span>
+                                <span>Read their annual reports and impact stories</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <span class="w-2 h-2 bg-emerald-500 rounded-full"></span>
+                                <span>Check their social media for current priorities</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-800 mb-4">Key Questions to Ask</h4>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center space-x-2">
+                                <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                                <span>Does our mission align with theirs?</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                                <span>What's their typical grant size?</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                                <span>Do they fund grassroots organizations?</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                                <span>What are their reporting requirements?</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="text-center bg-white rounded-xl shadow-lg p-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Ready to Find the Right Funders for Your Project?</h3>
+                <p class="text-lg text-gray-600 mb-6">Use the database to find funders who actually fund permaculture projects in your region</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="https://www.perma.earth/funding-opportunities/" target="_blank" class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3 px-8 rounded-lg transition-all transform hover:scale-105 shadow-lg">
+                        🌍 Access Database
+                    </a>
+                    <div class="text-sm text-gray-500">
+                        Free access • Updated with latest opportunities • Global coverage
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alternative Funding Section -->
+        <div id="section-alternative-funding" class="section-content hidden">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Alternative Funding Sources</h2>
+                <p class="text-lg text-gray-600">When grants aren't working, these options might. Each has real pros and cons</p>
+            </div>
+
+            <!-- Crowdfunding -->
+            <div class="bg-white rounded-xl shadow-lg p-8 mb-8 card-hover">
+                <div class="flex items-center mb-6">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                        <span class="text-3xl">🌐</span>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800">Crowdfunding Campaigns</h3>
+                        <p class="text-gray-600">Get money from lots of people online. Sounds easy but requires serious marketing skills</p>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-bold text-green-600 mb-4">🌱 Opportunities & Alignment</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span><strong>People Care:</strong> Directly engages community members in supporting regenerative solutions</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span><strong>Earth Care:</strong> Allows supporters to contribute to environmental healing projects</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span><strong>Fair Share:</strong> Democratizes funding by allowing small contributions from many people</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span>Global reach - connect with supporters worldwide</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span>Educational opportunity to share permaculture principles</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-red-600 mb-4">⚠️ Challenges & Considerations</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span>Requires significant marketing and social media effort</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span>Platform fees (typically 3-8% of funds raised)</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span>All-or-nothing models risk losing everything if goal not met</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span>Reward fulfillment can be time-consuming and costly</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span>Success depends heavily on existing network size</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-blue-50 rounded-lg p-6 mt-6">
+                    <h5 class="font-bold text-blue-800 mb-3">💡 Permaculture-Aligned Strategy</h5>
+                    <p class="text-blue-700 text-sm">Focus on storytelling that connects your project to broader regenerative movements. Offer rewards that educate supporters about permaculture (workshops, produce shares, site visits) rather than just material goods. Use the campaign as an opportunity to build a lasting community around your work.</p>
+                </div>
+            </div>
+
+            <!-- Corporate Partnerships -->
+            <div class="bg-white rounded-xl shadow-lg p-8 mb-8 card-hover">
+                <div class="flex items-center mb-6">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                        <span class="text-3xl">🏢</span>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800">Corporate Partnerships & Sponsorships</h3>
+                        <p class="text-gray-600">Companies with money who want to look green. Can work but watch out for greenwashing</p>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-bold text-green-600 mb-4">🌱 Opportunities & Alignment</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span><strong>Systems Thinking:</strong> Help businesses integrate regenerative practices into their operations</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span><strong>Mutual Benefit:</strong> Create win-win relationships that advance both missions</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span>Larger funding amounts than individual donations</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span>Access to business expertise and networks</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span>Potential for long-term strategic relationships</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-red-600 mb-4">⚠️ Challenges & Considerations</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span>Risk of "greenwashing" - ensure genuine commitment to sustainability</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span>Potential conflicts with permaculture ethics if not carefully vetted</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span>May require significant reporting and brand alignment</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span>Corporate priorities may shift, affecting long-term support</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span>Community may question corporate involvement</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-purple-50 rounded-lg p-6 mt-6">
+                    <h5 class="font-bold text-purple-800 mb-3">💡 Ethical Partnership Guidelines</h5>
+                    <p class="text-purple-700 text-sm">Carefully research potential corporate partners' environmental and social practices. Prioritize B-Corps, cooperatives, and businesses with demonstrated commitment to regenerative practices. Establish clear boundaries about decision-making autonomy and ensure partnerships enhance rather than compromise your permaculture mission.</p>
+                </div>
+            </div>
+
+            <!-- Social Impact Investment -->
+            <div class="bg-white rounded-xl shadow-lg p-8 mb-8 card-hover">
+                <div class="flex items-center mb-6">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                        <span class="text-3xl">💚</span>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800">Social Impact Investment</h3>
+                        <p class="text-gray-600">Investors who want both profit and good feelings. You need to pay them back with interest</p>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-bold text-green-600 mb-4">🌱 Opportunities & Alignment</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span><strong>Regenerative Economics:</strong> Aligns capital with ecological and social healing</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span><strong>Long-term Thinking:</strong> Patient capital that supports sustainable development</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span>Larger amounts available for scalable projects</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span>Access to business mentorship and networks</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span>Growing sector with increasing capital availability</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-red-600 mb-4">⚠️ Challenges & Considerations</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span>Requires demonstrable financial returns alongside impact</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span>May pressure projects toward profit over pure ecological benefit</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span>Complex legal structures and due diligence requirements</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span>Repayment obligations can create financial stress</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span>Limited availability in some regions</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-green-50 rounded-lg p-6 mt-6">
+                    <h5 class="font-bold text-green-800 mb-3">💡 Permaculture-Aligned Approach</h5>
+                    <p class="text-green-700 text-sm">Focus on revenue-generating permaculture enterprises (education programs, sustainable products, consulting services) that can provide returns while advancing ecological goals. Seek investors who understand and value long-term ecological benefits, not just short-term financial gains. Consider blended finance models that combine grants with investment capital.</p>
+                </div>
+            </div>
+
+            <!-- Community Investment -->
+            <div class="bg-white rounded-xl shadow-lg p-8 mb-8 card-hover">
+                <div class="flex items-center mb-6">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mr-4">
+                        <span class="text-3xl">🤝</span>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800">Community Investment & Cooperative Models</h3>
+                        <p class="text-gray-600">Local people pool money and share ownership. Takes time to organize but builds real community power</p>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-bold text-green-600 mb-4">🌱 Opportunities & Alignment</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span><strong>People Care:</strong> Builds local ownership and democratic participation</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span><strong>Fair Share:</strong> Keeps wealth circulating within the community</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span><strong>Local Resilience:</strong> Reduces dependence on external funding</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span>Strong community buy-in and support</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span>Flexible terms aligned with community values</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-red-600 mb-4">⚠️ Challenges & Considerations</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span>Limited capital availability in many communities</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span>Requires significant community education and organizing</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span>Complex governance structures need careful management</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span>May face regulatory barriers in some jurisdictions</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span>More time-intensive decision-making (though often more ethical and inclusive)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-orange-50 rounded-lg p-6 mt-6">
+                    <h5 class="font-bold text-orange-800 mb-3">💡 Community-Centered Strategy</h5>
+                    <p class="text-orange-700 text-sm">Start with community land trusts, time banks, or local investment circles. Explore community-supported everything models beyond agriculture - community-supported energy, forestry, or education. Consider rotating savings and credit associations (ROSCAs) or other traditional community financing methods adapted for permaculture projects.</p>
+                </div>
+            </div>
+
+            <!-- Choosing the Right Mix -->
+            <div class="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl p-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">🎯 Choosing Your Funding Mix</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-lg p-6 shadow-md">
+                        <h4 class="font-bold text-gray-800 mb-3">🌱 Early Stage Projects</h4>
+                        <p class="text-sm text-gray-600 mb-3">Focus on community-building approaches:</p>
+                        <ul class="text-xs text-gray-700 space-y-1">
+                            <li>• Crowdfunding for initial capital</li>
+                            <li>• Community investment circles</li>
+                            <li>• Local business partnerships</li>
+                            <li>• Skill-sharing and time banking</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 shadow-md">
+                        <h4 class="font-bold text-gray-800 mb-3">🌿 Growing Projects</h4>
+                        <p class="text-sm text-gray-600 mb-3">Diversify with proven impact:</p>
+                        <ul class="text-xs text-gray-700 space-y-1">
+                            <li>• Corporate partnerships with aligned values</li>
+                            <li>• Social impact investment for scaling</li>
+                            <li>• Cooperative ownership models</li>
+                            <li>• Revenue-generating enterprises</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 shadow-md">
+                        <h4 class="font-bold text-gray-800 mb-3">🌳 Mature Projects</h4>
+                        <p class="text-sm text-gray-600 mb-3">Build sustainable funding ecosystems:</p>
+                        <ul class="text-xs text-gray-700 space-y-1">
+                            <li>• Multiple revenue streams</li>
+                            <li>• Community ownership transitions</li>
+                            <li>• Mentoring other projects (fee-for-service)</li>
+                            <li>• Endowment or reserve fund building</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg p-6 mt-6 shadow-md">
+                    <h4 class="font-bold text-gray-800 mb-3 text-center">🌍 Remember: Align with Permaculture Ethics</h4>
+                    <p class="text-gray-600 text-sm text-center max-w-3xl mx-auto">
+                        Every funding choice should strengthen your ability to care for the earth, care for people, and share resources fairly. 
+                        The means should align with the ends - how you fund your project is as important as what you do with the funding. 
+                        Choose approaches that build community resilience and ecological health, not just financial sustainability.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Funder Relations Section -->
+        <div id="section-funder-relations" class="section-content hidden">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Building Strong Funder Relationships</h2>
+                <p class="text-lg text-gray-600">How to work with funders without being annoying or unprofessional</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8 mb-12">
+                <!-- Do's -->
+                <div class="bg-white rounded-xl shadow-lg p-8 card-hover border-l-4 border-emerald-500">
+                    <h3 class="text-2xl font-bold text-emerald-600 mb-6">✅ Professional Do's</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Before Applying</h4>
+                            <ul class="text-sm text-gray-600 space-y-1 ml-4">
+                                <li>• Research the funder thoroughly</li>
+                                <li>• Attend their information sessions</li>
+                                <li>• Connect with past grantees</li>
+                                <li>• Follow application guidelines exactly</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">During the Process</h4>
+                            <ul class="text-sm text-gray-600 space-y-1 ml-4">
+                                <li>• Respond promptly to requests</li>
+                                <li>• Be transparent about challenges</li>
+                                <li>• Provide regular updates</li>
+                                <li>• Acknowledge their support publicly</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Long-term Relationship</h4>
+                            <ul class="text-sm text-gray-600 space-y-1 ml-4">
+                                <li>• Submit reports on time</li>
+                                <li>• Share success stories and photos</li>
+                                <li>• Invite them to visit your project</li>
+                                <li>• Consider them for future partnerships</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Don'ts -->
+                <div class="bg-white rounded-xl shadow-lg p-8 card-hover border-l-4 border-red-500">
+                    <h3 class="text-2xl font-bold text-red-600 mb-6">❌ Relationship Killers</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Communication Mistakes</h4>
+                            <ul class="text-sm text-gray-600 space-y-1 ml-4">
+                                <li>• Mass emails to multiple funders</li>
+                                <li>• Pushy or demanding language</li>
+                                <li>• Ignoring their preferred communication style</li>
+                                <li>• Making unrealistic promises</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Application Errors</h4>
+                            <ul class="text-sm text-gray-600 space-y-1 ml-4">
+                                <li>• Submitting generic proposals</li>
+                                <li>• Missing deadlines or requirements</li>
+                                <li>• Asking for inappropriate amounts</li>
+                                <li>• Poor grammar and formatting</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Ongoing Relationship</h4>
+                            <ul class="text-sm text-gray-600 space-y-1 ml-4">
+                                <li>• Late or incomplete reports</li>
+                                <li>• Using funds for unauthorized purposes</li>
+                                <li>• Failing to acknowledge their support</li>
+                                <li>• Only contacting when you need money</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Impact Communication & Acknowledgment -->
+            <div class="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl p-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">📢 Impact Communication & Acknowledgment</h3>
+                <p class="text-center text-gray-600 mb-8">Funders check your social media and website before giving you money. They want to see you're actually doing the work, not just asking for funds.</p>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div class="bg-white rounded-lg p-6 shadow-md border-l-4 border-emerald-500">
+                        <h4 class="font-bold text-emerald-700 mb-4">✅ Effective Impact Communication</h4>
+                        <ul class="space-y-3 text-sm text-gray-700">
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span><strong>Regular Social Media Updates:</strong> Share project progress, photos, and stories consistently</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span><strong>Detailed Impact Reports:</strong> Document measurable outcomes and community benefits</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span><strong>Stakeholder Newsletters:</strong> Keep community, partners, and supporters informed</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span><strong>Professional Website:</strong> Maintain current project information and achievements</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span><strong>Community Events:</strong> Host site visits, workshops, and celebration gatherings</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg p-6 shadow-md border-l-4 border-orange-500">
+                        <h4 class="font-bold text-orange-700 mb-4">⚠️ Funder Acknowledgment Guidelines</h4>
+                        <ul class="space-y-3 text-sm text-gray-700">
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span><strong>Ask Permission First:</strong> Always get explicit approval before public acknowledgment</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span><strong>Follow Their Guidelines:</strong> Use approved language, logos, and attribution formats</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span><strong>Respect Privacy Preferences:</strong> Some funders prefer anonymous support</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span><strong>Use Formal Reporting Channels:</strong> Communicate through their preferred methods only</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <span><strong>Focus on Impact, Not Funding:</strong> Highlight outcomes rather than dollar amounts</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <h4 class="font-bold text-gray-800 mb-4 text-center">🎯 Strategic Communication Approach</h4>
+                    <div class="grid md:grid-cols-3 gap-6 text-sm">
+                        <div class="text-center">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <span class="text-xl">📱</span>
+                            </div>
+                            <h5 class="font-medium text-gray-800 mb-2">Social Media Strategy</h5>
+                            <ul class="text-gray-700 space-y-1 text-left">
+                                <li>• Post 2-3 times per week</li>
+                                <li>• Use consistent hashtags</li>
+                                <li>• Share behind-the-scenes content</li>
+                                <li>• Engage with community comments</li>
+                                <li>• Tag relevant partners (with permission)</li>
+                            </ul>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <span class="text-xl">📊</span>
+                            </div>
+                            <h5 class="font-medium text-gray-800 mb-2">Impact Reporting</h5>
+                            <ul class="text-gray-700 space-y-1 text-left">
+                                <li>• Quarterly impact summaries</li>
+                                <li>• Photo documentation system</li>
+                                <li>• Beneficiary testimonials</li>
+                                <li>• Measurable outcome tracking</li>
+                                <li>• Challenge and learning sharing</li>
+                            </ul>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <span class="text-xl">🤝</span>
+                            </div>
+                            <h5 class="font-medium text-gray-800 mb-2">Stakeholder Engagement</h5>
+                            <ul class="text-gray-700 space-y-1 text-left">
+                                <li>• Monthly community updates</li>
+                                <li>• Annual stakeholder meetings</li>
+                                <li>• Open house events</li>
+                                <li>• Volunteer appreciation</li>
+                                <li>• Partnership celebrations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-6 mt-6">
+                    <h5 class="font-bold text-yellow-800 mb-3">💡 Remember: They're Always Watching</h5>
+                    <p class="text-yellow-700 text-sm">
+                        Funders regularly monitor grantees through social media, websites, and public reports. Your consistent, professional communication about impact - not funding - demonstrates accountability and builds trust. Focus on telling your story to the world, and funders will see your professionalism and effectiveness through that authentic communication.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Action Checklist Section -->
+        <div id="section-checklist" class="section-content hidden">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Your Action Plan</h2>
+                <p class="text-lg text-gray-600">The real timeline for getting funding ready. Most people underestimate this by 6-12 months</p>
+            </div>
+
+            <div class="space-y-8">
+                <!-- Phase 1 -->
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold text-blue-600 mb-6 flex items-center">
+                        <span class="bg-blue-100 rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3">1</span>
+                        Foundation Building (Months 1-3)
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-3">
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 text-blue-600 rounded">
+                                <span class="text-gray-700">Clarify mission and vision statements</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 text-blue-600 rounded">
+                                <span class="text-gray-700">Establish legal structure (nonprofit/fiscal sponsor)</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 text-blue-600 rounded">
+                                <span class="text-gray-700">Create basic financial tracking system</span>
+                            </label>
+                            <div class="ml-8 mt-2 p-3 bg-blue-50 rounded-lg">
+                                <p class="text-sm text-blue-800 mb-2"><strong>💡 Recommended Tool:</strong> <a href="https://opencollective.org" target="_blank" class="underline hover:text-blue-600">OpenCollective.org</a></p>
+                                <p class="text-xs text-blue-700">Open source, transparent financial management platform that provides public accountability and professional reporting - perfect for grassroots organizations building funder trust.</p>
+                            </div>
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 text-blue-600 rounded">
+                                <span class="text-gray-700">Document current activities and impact</span>
+                            </label>
+                        </div>
+                        <div class="space-y-3">
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 text-blue-600 rounded">
+                                <span class="text-gray-700">Build community advisory group</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 text-blue-600 rounded">
+                                <span class="text-gray-700">Create professional website and materials</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 text-blue-600 rounded">
+                                <span class="text-gray-700">Start small pilot projects</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 text-blue-600 rounded">
+                                <span class="text-gray-700">Network with other permaculture organizations</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 2 -->
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold text-green-600 mb-6 flex items-center">
+                        <span class="bg-green-100 rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3">2</span>
+                        Research & Preparation (Months 4-6)
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-3">
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 text-green-600 rounded">
+                                <span class="text-gray-700">Research 10-15 potential funders</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 text-green-600 rounded">
+                                <span class="text-gray-700">Attend funder information sessions</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 text-green-600 rounded">
+                                <span class="text-gray-700">Connect with past grantees</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 text-green-600 rounded">
+                                <span class="text-gray-700">Develop detailed project budgets</span>
+                            </label>
+                        </div>
+                        <div class="space-y-3">
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 text-green-600 rounded">
+                                <span class="text-gray-700">Create evaluation and measurement plan</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 text-green-600 rounded">
+                                <span class="text-gray-700">Gather letters of support</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 text-green-600 rounded">
+                                <span class="text-gray-700">Document team qualifications</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 text-green-600 rounded">
+                                <span class="text-gray-700">Prepare standard proposal components</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 3 -->
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold text-purple-600 mb-6 flex items-center">
+                        <span class="bg-purple-100 rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3">3</span>
+                        Application & Follow-up (Months 7-12)
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-3">
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 text-purple-600 rounded">
+                                <span class="text-gray-700">Submit 3-5 targeted applications</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 text-purple-600 rounded">
+                                <span class="text-gray-700">Follow up appropriately with funders</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 text-purple-600 rounded">
+                                <span class="text-gray-700">Continue documenting project progress</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 text-purple-600 rounded">
+                                <span class="text-gray-700">Prepare for site visits or presentations</span>
+                            </label>
+                        </div>
+                        <div class="space-y-3">
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 text-purple-600 rounded">
+                                <span class="text-gray-700">Set up grant management systems</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 text-purple-600 rounded">
+                                <span class="text-gray-700">Plan celebration and acknowledgment</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 text-purple-600 rounded">
+                                <span class="text-gray-700">Develop relationships with program officers</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 text-purple-600 rounded">
+                                <span class="text-gray-700">Plan for sustainability beyond initial funding</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Progress Tracker -->
+            <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-10 mt-8 border border-blue-100">
+                <h3 class="text-3xl font-bold text-gray-900 mb-8 text-center">📊 Implementation Progress</h3>
+                <div class="text-center">
+                    <div class="inline-block bg-white rounded-xl p-8 shadow-lg border border-gray-200">
+                        <div class="text-5xl font-bold text-blue-600 mb-3" id="progress-percentage">0%</div>
+                        <p class="text-gray-700 font-medium text-lg">Strategic Tasks Completed</p>
+                        <div class="w-80 bg-gray-200 rounded-full h-4 mt-6">
+                            <div class="bg-blue-600 h-4 rounded-full transition-all duration-500" id="progress-bar" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Funding Circle Services -->
+            <div class="bg-gradient-to-r from-purple-50 to-indigo-50 rounded-xl p-8 mt-8 mb-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">🤝 Need Professional Support?</h3>
+                <div class="text-center mb-6">
+                    <p class="text-lg text-gray-600 mb-4">The Funding Circle Services team offers professional assistance to accelerate your funding success</p>
+                    <p class="text-sm text-gray-500 italic">These are paid professional services designed to maximize your funding potential</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white rounded-lg p-6 shadow-md border-l-4 border-purple-500">
+                        <div class="text-2xl mb-3">🎯</div>
+                        <h4 class="font-bold text-gray-800 mb-2">Funding Readiness Facilitation</h4>
+                        <p class="text-sm text-gray-600">Expert guidance and mentorship to build your organizational capacity and funding readiness systematically.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg p-6 shadow-md border-l-4 border-blue-500">
+                        <div class="text-2xl mb-3">🔍</div>
+                        <h4 class="font-bold text-gray-800 mb-2">Grant Matching Services</h4>
+                        <p class="text-sm text-gray-600">Professional research to identify the best funding opportunities that align with your project goals and capacity.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg p-6 shadow-md border-l-4 border-green-500">
+                        <div class="text-2xl mb-3">📊</div>
+                        <h4 class="font-bold text-gray-800 mb-2">Grant & Financial Management</h4>
+                        <p class="text-sm text-gray-600">Professional oversight of grant compliance, budget tracking, and financial reporting to ensure funder requirements are met.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg p-6 shadow-md border-l-4 border-orange-500">
+                        <div class="text-2xl mb-3">📝</div>
+                        <h4 class="font-bold text-gray-800 mb-2">Grant Application Writing</h4>
+                        <p class="text-sm text-gray-600">Expert proposal writing services to create compelling, professional applications that stand out to funders.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg p-6 shadow-md border-l-4 border-teal-500">
+                        <div class="text-2xl mb-3">📋</div>
+                        <h4 class="font-bold text-gray-800 mb-2">Grant Reporting Writing</h4>
+                        <p class="text-sm text-gray-600">Professional report writing to maintain strong funder relationships and ensure continued support for your work.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg p-6 shadow-md border-l-4 border-red-500">
+                        <div class="text-2xl mb-3">🤝</div>
+                        <h4 class="font-bold text-gray-800 mb-2">Partnership & Collaboration</h4>
+                        <p class="text-sm text-gray-600">Assistance finding strategic grant partners and collaborators to strengthen your applications and expand your impact.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg p-6 shadow-md border-l-4 border-indigo-500">
+                        <div class="text-2xl mb-3">🏛️</div>
+                        <h4 class="font-bold text-gray-800 mb-2">Fiscal Host Partnership</h4>
+                        <p class="text-sm text-gray-600">Connect with established fiscal sponsors to access funding opportunities requiring nonprofit status and legal infrastructure.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg p-6 shadow-md border-l-4 border-pink-500">
+                        <div class="text-2xl mb-3">🌐</div>
+                        <h4 class="font-bold text-gray-800 mb-2">Collaboration Facilitation</h4>
+                        <p class="text-sm text-gray-600">Professional facilitation to build effective partnerships between organizations, communities, and stakeholders for stronger projects.</p>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-8">
+                    <div class="bg-white rounded-lg p-6 shadow-md max-w-2xl mx-auto">
+                        <h4 class="font-bold text-gray-800 mb-3">Ready to Accelerate Your Funding Success?</h4>
+                        <p class="text-gray-600 mb-4">Our experienced team has helped numerous projects and have collectively been successful at securing funding at different scales for permaculture and regenerative projects worldwide.</p>
+                        <p class="text-sm text-gray-500 mb-4">Contact us to discuss how our services can support your specific funding goals and timeline.</p>
+                        <div class="text-emerald-600 font-medium">
+                            📧 Contact: funding@perma.earth
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16 mt-20">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-8">
+                <span class="text-2xl">🌱</span>
+            </div>
+            <h3 class="text-3xl font-bold mb-6">Strategic Implementation</h3>
+            <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">Securing funding requires strategic planning, professional execution, and realistic timelines. Success comes from methodical preparation and authentic relationship building.</p>
+            <div class="bg-gray-700 rounded-lg p-6 max-w-2xl mx-auto mb-8">
+                <h4 class="font-bold mb-3">Key Takeaways</h4>
+                <ul class="text-left text-gray-300 space-y-2">
+                    <li>• Don't apply for big grants until you've proven you can manage small ones</li>
+                    <li>• Research funders properly or waste everyone's time</li>
+                    <li>• Be professional and honest, even when things go wrong</li>
+                    <li>• Start with pilot projects that show real results</li>
+                    <li>• Have a plan for when the grant money runs out</li>
+                </ul>
+            </div>
+            
+            <!-- Presenter Credit and License -->
+            <div class="border-t border-gray-600 pt-6">
+                <div class="grid md:grid-cols-2 gap-6 items-center">
+                    <div class="text-left">
+                        <p class="text-gray-300 mb-2">
+                            <strong>Prepared by:</strong> Aimee Fenech for the Funding Circle
+                        </p>
+                        <p class="text-sm text-gray-400 mb-2">
+                            Empowering permaculture projects worldwide through strategic funding guidance
+                        </p>
+                        <p class="text-xs text-gray-500">
+                            Created with the help of Canva AI
+                        </p>
+                    </div>
+                    <div class="text-right">
+                        <div class="flex items-center justify-end space-x-2 mb-2">
+                            <span class="text-2xl">📄</span>
+                            <span class="text-gray-300 font-medium">Licensed under CC BY-SA 4.0</span>
+                        </div>
+                        <p class="text-xs text-gray-400">
+                            You are free to share and adapt this material with attribution
+                        </p>
+                        <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" class="text-emerald-400 hover:text-emerald-300 text-xs underline">
+                            View License Details
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Tab switching functionality
+        function showSection(sectionName) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.section-content');
+            sections.forEach(section => section.classList.add('hidden'));
+            
+            // Show selected section
+            document.getElementById(`section-${sectionName}`).classList.remove('hidden');
+            
+            // Update tab styles
+            const tabs = document.querySelectorAll('.tab-btn');
+            tabs.forEach(tab => {
+                tab.classList.remove('bg-blue-600', 'text-white', 'shadow-md');
+                tab.classList.add('text-gray-700', 'hover:bg-gray-50', 'hover:text-blue-600');
+            });
+            
+            // Highlight active tab
+            const activeTab = document.getElementById(`tab-${sectionName}`);
+            activeTab.classList.remove('text-gray-700', 'hover:bg-gray-50', 'hover:text-blue-600');
+            activeTab.classList.add('bg-blue-600', 'text-white', 'shadow-md');
+        }
+
+        // Progress tracking for checklist
+        function updateProgress() {
+            const checkboxes = document.querySelectorAll('#section-checklist input[type="checkbox"]');
+            const checkedBoxes = document.querySelectorAll('#section-checklist input[type="checkbox"]:checked');
+            const percentage = Math.round((checkedBoxes.length / checkboxes.length) * 100);
+            
+            document.getElementById('progress-percentage').textContent = percentage + '%';
+            document.getElementById('progress-bar').style.width = percentage + '%';
+        }
+
+        // Add event listeners to checkboxes
+        document.addEventListener('DOMContentLoaded', function() {
+            const checkboxes = document.querySelectorAll('#section-checklist input[type="checkbox"]');
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', updateProgress);
+            });
+        });
+
+        // Smooth scrolling for better UX
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9838480521a3cfa6',t:'MTc1ODYxMjA0NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
