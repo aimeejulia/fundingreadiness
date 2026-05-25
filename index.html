@@ -409,20 +409,26 @@
             <h2 class="text-3xl font-bold text-gray-900">Featured Video</h2>
         </div>
         <div class="flex flex-col items-center gap-4">
-            <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube-nocookie.com/embed/ZjSSLTJ8AtM?rel=0&modestbranding=1"
-                title="Funding Readiness YouTube video"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                loading="lazy"
-                allowfullscreen>
-            </iframe>
+            <a
+                href="https://www.youtube.com/watch?v=ZjSSLTJ8AtM"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block w-full max-w-4xl overflow-hidden rounded-xl border border-emerald-200 bg-white shadow-lg transition-transform duration-200 hover:-translate-y-1"
+                aria-label="Open featured video on YouTube">
+                <div class="relative aspect-video w-full bg-emerald-50">
+                    <img
+                        src="https://img.youtube.com/vi/ZjSSLTJ8AtM/maxresdefault.jpg"
+                        alt="Featured video preview"
+                        class="h-full w-full object-cover"
+                        loading="lazy"
+                        onerror="this.onerror=null;this.src='https://img.youtube.com/vi/ZjSSLTJ8AtM/hqdefault.jpg';">
+                    <div class="absolute inset-0 flex items-center justify-center bg-black/20">
+                        <span class="rounded-full bg-white/95 px-6 py-3 text-sm font-semibold text-emerald-700 shadow-md">Watch on YouTube</span>
+                    </div>
+                </div>
+            </a>
             <p class="text-sm text-gray-600 text-center max-w-2xl">
-                If the embed is blocked by YouTube on your browser/network, watch directly on
-                <a class="underline text-emerald-700" href="https://www.youtube.com/watch?v=ZjSSLTJ8AtM" target="_blank" rel="noopener noreferrer">YouTube</a>.
+                This video is opening directly on YouTube because the embedded player can be blocked by YouTube settings or browser/network policy for this video.
             </p>
         </div>
     </div>
