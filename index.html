@@ -122,6 +122,15 @@
             box-shadow: 0 10px 22px rgba(16, 92, 66, 0.16);
         }
 
+        .video-card {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .video-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 18px 24px rgba(16, 92, 66, 0.12);
+        }
+
         main {
             padding-top: 2.8rem !important;
         }
@@ -406,30 +415,79 @@
     <!-- Video Section -->
     <div id="featured-video-section" class="max-w-6xl mx-auto px-6 py-8">
         <div class="text-center mb-8">
-            <h2 class="text-3xl font-bold text-gray-900">Featured Video</h2>
+            <h2 class="text-3xl font-bold text-gray-900">Watch our Funding Readiness Webinars</h2>
         </div>
-        <div class="flex flex-col items-center gap-4">
+
+        <p class="text-sm text-gray-600 text-center max-w-2xl mx-auto mb-6">
+            These videos open directly on YouTube because embedded playback can be blocked by YouTube settings or browser/network policy.
+        </p>
+
+        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             <a
                 href="https://www.youtube.com/watch?v=ZjSSLTJ8AtM"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="block w-full max-w-4xl overflow-hidden rounded-xl border border-emerald-200 bg-white shadow-lg transition-transform duration-200 hover:-translate-y-1"
-                aria-label="Open featured video on YouTube">
+                class="video-card block overflow-hidden rounded-xl border border-emerald-200 bg-white shadow-md"
+                aria-label="Open How Ready Is Your Project for Funding video on YouTube">
                 <div class="relative aspect-video w-full bg-emerald-50">
                     <img
                         src="https://img.youtube.com/vi/ZjSSLTJ8AtM/maxresdefault.jpg"
-                        alt="Featured video preview"
+                        alt="How Ready Is Your Project for Funding video preview"
                         class="h-full w-full object-cover"
                         loading="lazy"
                         onerror="this.onerror=null;this.src='https://img.youtube.com/vi/ZjSSLTJ8AtM/hqdefault.jpg';">
-                    <div class="absolute inset-0 flex items-center justify-center bg-black/20">
-                        <span class="rounded-full bg-white/95 px-6 py-3 text-sm font-semibold text-emerald-700 shadow-md">Watch on YouTube</span>
+                    <div class="absolute inset-0 flex items-center justify-center bg-black/15">
+                        <span class="rounded-full bg-white/95 px-3 py-2 text-xs font-semibold text-emerald-700 shadow-sm">Watch</span>
                     </div>
                 </div>
+                <div class="p-4">
+                    <h3 class="text-lg font-bold text-gray-900">How Ready Is Your Project for Funding?</h3>
+                </div>
             </a>
-            <p class="text-sm text-gray-600 text-center max-w-2xl">
-                This video is opening directly on YouTube because the embedded player can be blocked by YouTube settings or browser/network policy for this video.
-            </p>
+
+            <a
+                href="https://youtube.com/live/C2g0KBfGSDQ?feature=share"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="video-card block overflow-hidden rounded-xl border border-emerald-200 bg-white shadow-md"
+                aria-label="Open Getting Funders to Come to You video on YouTube">
+                <div class="relative aspect-video w-full bg-emerald-50">
+                    <img
+                        src="https://img.youtube.com/vi/C2g0KBfGSDQ/maxresdefault.jpg"
+                        alt="Getting Funders to Come to You video preview"
+                        class="h-full w-full object-cover"
+                        loading="lazy"
+                        onerror="this.onerror=null;this.src='https://img.youtube.com/vi/C2g0KBfGSDQ/hqdefault.jpg';">
+                    <div class="absolute inset-0 flex items-center justify-center bg-black/15">
+                        <span class="rounded-full bg-white/95 px-3 py-2 text-xs font-semibold text-emerald-700 shadow-sm">Watch</span>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-lg font-bold text-gray-900">Getting Funders to Come to You</h3>
+                </div>
+            </a>
+
+            <a
+                href="https://youtube.com/live/ZKWliBEkl7s?feature=share"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="video-card block overflow-hidden rounded-xl border border-emerald-200 bg-white shadow-md"
+                aria-label="Open Partnering for Impact video on YouTube">
+                <div class="relative aspect-video w-full bg-emerald-50">
+                    <img
+                        src="https://img.youtube.com/vi/ZKWliBEkl7s/maxresdefault.jpg"
+                        alt="Partnering for Impact video preview"
+                        class="h-full w-full object-cover"
+                        loading="lazy"
+                        onerror="this.onerror=null;this.src='https://img.youtube.com/vi/ZKWliBEkl7s/hqdefault.jpg';">
+                    <div class="absolute inset-0 flex items-center justify-center bg-black/15">
+                        <span class="rounded-full bg-white/95 px-3 py-2 text-xs font-semibold text-emerald-700 shadow-sm">Watch</span>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-lg font-bold text-gray-900">Partnering for Impact</h3>
+                </div>
+            </a>
         </div>
     </div>
 
